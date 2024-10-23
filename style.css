@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 160px;
+    display: flex;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 160px;
+}
+#in1{
+    width: 150px    ;
+}
+#in2{
+    width: 1100px;
+    text-align: center;
+}
+#in3{
+    width: 200px;
+}
+#clgname{
+    font-size: 35px;
+    color:red;
+}
+#name1{
+    font-size: 22px;
+    color:blue;
+}
+#scrolltext{
+    font-size: 30px;
+    color: green;
+    font-weight: italic;
+}
+#navbox{
+    border: solid 1px;
+    height: 40px;
+}
+ul li{
+    border: solid 1px;
+    height: 40px;
+    width: 175px;
+    float: left;
+    background-color: beige;
+    text-align: center;
+    line-height: 40px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    font-size: 24px;
+    color:rgb(15, 14, 14);
+    text-decoration: none;
+    }
+    ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover ul li{
+    background-color: rgb(212, 130, 178);
+}
+.outerbox{
+    border: solid 1px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+#inbox1,#inbox2,#inbox3{
+    border: solid 1px;
+    height: 300px;
+    z-index: -1;
+}
+#inbox1{
+    width: 600px;
+    background-image: url(bits.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(balaji2.jpg);
+    }
+    10%{
+        background-image:  url(balaji3.jpg);
+    }
+    20%{
+        background-image: url(balaji4.jpg);
+    }
+    30%{
+        background-image: url(balaji5.jpg);
+    }
+    40%{
+        background-image: url(bits.jpg);
+    }
+    50%{
+        background-image: url(balaji.jpg);
+    }
+
+}
+#inbox2,#inbox3{
+    width: 290px;
+    text-align: center;
+}
